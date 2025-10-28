@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Seguro - Aula 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <h1>Cadastro Seguro</h1>
+          <p>Sistema de cadastro com criptografia</p>
+        </div>
+
+        <form id="registerForm" class="form">
+          <div class="form-group">
+            <label for="username">Nome de Usuário</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              placeholder="Digite seu username"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="seu@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Crie uma senha segura"
+            />
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn">
+            <span class="btn-text">Cadastrar</span>
+            <span class="btn-loading">Processando...</span>
+          </button>
+        </form>
+
+        <div id="messageBox" class="message-box"></div>
+
+        <div class="features">
+          <div class="feature-item">
+            <div class="feature-icon"></div>
+            <span>Senhas criptografadas com Bcrypt</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"></div>
+            <span>Validação em tempo real</span>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"></div>
+            <span>Armazenamento seguro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
