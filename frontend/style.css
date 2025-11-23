@@ -1,0 +1,60 @@
+body {
+  font-family: Inter, Arial;
+  background: #eef2ff;
+  padding: 30px;
+}
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  margin-bottom: 20px;
+}
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+button {
+  background: #5b21b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message-box {
+  display: none;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.message-box.success {
+  background: #dcfce7;
+  color: #064e3b;
+  border: 1px solid #86efac;
+}
+.message-box.error {
+  background: #fee2e2;
+  color: #7f1d1d;
+  border: 1px solid #fca5a5;
+}
+.message-box.alert {
+  background: #fff7ed;
+  color: #7c2d12;
+  border: 1px solid #f3c37a;
+}
